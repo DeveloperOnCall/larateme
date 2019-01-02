@@ -19,12 +19,12 @@
                 </b>
                 <!--End Logo icon -->
                 <!-- Logo text -->
-                <span class="logo-text">
-                            <!-- dark Logo text -->
-                            <img src="{{ config('larateme.images.logo-text') }}" alt="{{ config('app.name') }}" class="dark-logo" />
+               {{-- <span class="logo-text">--}}
+                    <!-- dark Logo text -->
+                        {{--<img src="{{ config('larateme.images.logo-text') }}" alt="{{ config('app.name') }}" class="dark-logo" />--}}
                     <!-- Light Logo text -->
-                            <img src="{{ config('larateme.images.logo-text-light') }}" class="light-logo" alt="{{ config('app.name') }}" />
-                        </span>
+                        {{--<img src="{{ config('larateme.images.logo-text-light') }}" class="light-logo" alt="{{ config('app.name') }}" />--}}
+                {{--</span>--}}
             </a>
             <!-- ============================================================== -->
             <!-- End Logo -->

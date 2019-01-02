@@ -1,10 +1,17 @@
 <?php
 return [
     'appearance' => [
-        'version' => '.001',
+        'version' => '1.004',
         'dashboard' => 1,
         /*
          * Supported values skin1/skin2/skin3/skin4/skin5/skin6
+         * To apply blue color - skin1
+         * To apply orange color - skin2
+         * To apply cyan color - skin3
+         * To apply purple color - skin4
+         * To apply black color - skin5
+         * To apply gray color - skin6
+         *
          */
         'skin' => 'skin1',
 
