@@ -39,7 +39,7 @@
     <!-- ============================================================== -->
     <!-- Login box.scss -->
     <!-- ============================================================== -->
-    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(../../assets/images/big/auth-bg.jpg) no-repeat center center;">
+    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(/assets/images/big/auth-bg.jpg) no-repeat center center;">
         <div class="auth-box">
             @yield('content')
         </div>
@@ -63,10 +63,10 @@
 <!-- ============================================================== -->
 <!-- All Required js -->
 <!-- ============================================================== -->
-<script src="{{ asset('/libs/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('/assets/libs/jquery/dist/jquery.min.js') }}"></script>
 <!-- Bootstrap tether Core JavaScript -->
-<script src="{{ asset('/libs/popper.js/dist/umd/popper.min.js') }}"></script>
-<script src="{{ asset('/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
+<script src="{{ asset('/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <!-- ============================================================== -->
 <!-- This page plugin js -->
 <!-- ============================================================== -->

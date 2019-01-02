@@ -12,7 +12,7 @@
     <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
         <i class="ti-search font-16"></i>
     </a>
-    <form class="app-search position-absolute">
+    <form class="app-search position-absolute" action="{{ config('larateme.appearance.urls.search') }}">
         <input type="text" class="form-control" placeholder="Search &amp; enter">
         <a class="srh-btn">
             <i class="ti-close"></i>

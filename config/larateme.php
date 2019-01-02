@@ -70,14 +70,46 @@ return [
         'password_request' => 'password/reset',
         'password_email' => 'password/email',
         'password_reset' => 'password/reset',
+        'search' => '/search',
     ],
+
     'images' => [
-        'logo-icon' => '/images/logo-icon.png',
-        'logo-light-icon' => '/images/logo-light-icon.png',
-        'logo' => '/images/logo.png',
-        'logo-dark' => '/images/logo-dark.png',
-        'logo-light' => '/images/logo-lite.png',
-        'logo-text' => '/images/logo-text.png',
-        'logo-light-text' => '/images/logo-lite-text.png',
+        /*
+        |--------------------------------------------------------------------------
+        | IMAGEs
+        |--------------------------------------------------------------------------
+        |
+        | Change the basic images within the template by setting their urls below
+        |
+        |
+        */
+        'logo-icon' => '/assets/images/logo-icon.png',
+        'logo-light-icon' => '/assets/images/logo-light-icon.png',
+        'logo' => '/assets/images/logo.png',
+        'logo-dark' => '/assets/images/logo-dark.png',
+        'logo-light' => '/assets/images/logo-lite.png',
+        'logo-text' => '/assets/images/logo-text.png',
+        'logo-light-text' => '/assets/images/logo-lite-text.png',
+        'login-background' => '/assets/images/big/auth-bg.jpg',
+
     ],
+
+    'sources' => [
+        /*
+        |--------------------------------------------------------------------------
+        | Data Sources - WORK IN PROGRESS
+        |--------------------------------------------------------------------------
+        |
+        | This is very much a work in progress and should not be used yet
+        |
+        */
+        'message_list'  => [
+            'klass' => 'MessageController',
+            'method' => 'messageList',
+        ],
+        'user_list'  => [
+            'klass' => 'User',
+            'method' => 'userList',
+        ],
+    ]
 ];

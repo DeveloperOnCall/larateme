@@ -19,23 +19,33 @@
                                 </span>
         <div class="d-flex no-block align-items-center p-15 bg-primary text-white m-b-10">
             <div class="">
-                <img src="{{ get_gravatar(Auth()->user()->email) }}" alt="{{ Auth::user()->name }}" class="img-circle" width="60">
+                @isset($user)
+                    <img src="{{ $user->image }}" alt="{{ Auth::user()->name }}" class="img-circle" width="60">
+                    @else
+                    <img src="{{ get_gravatar(Auth()->user()->email) }}" alt="{{ Auth::user()->name }}" class="img-circle" width="60">
+                @endisset
             </div>
             <div class="m-l-10">
                 <h4 class="m-b-0">{{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}</h4>
                 <p class=" m-b-0">{{{ isset(Auth::user()->email) ? Auth::user()->email : Auth::user()->email }}}</p>
             </div>
         </div>
-        <a class="dropdown-item" href="javascript:void(0)">
-            <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
+        @isset($user)
+        <a class="dropdown-item" href="{{ $user->profile_url }}">
+            <i class="ti-user m-r-5 m-l-5"></i> @lang('My Profile')</a>
         {{--<a class="dropdown-item" href="javascript:void(0)">
             <i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>--}}
-        <a class="dropdown-item" href="javascript:void(0)">
-            <i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
+        @endisset
+        @isset($inbox)
+        <a class="dropdown-item" href="{{ config('larateme.urls.inbox') }}">
+            <i class="ti-email m-r-5 m-l-5"></i> @lang('Inbox')</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="javascript:void(0)">
+        @endisset
+        @isset($account)
+        <a class="dropdown-item" href="{{ config('larateme.urls.account') }}">
             <i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
         <div class="dropdown-divider"></div>
+        @endisset
         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
         <div class="dropdown-divider"></div>

@@ -3,7 +3,7 @@
 @section('content')
     <div id="loginform">
         <div class="logo">
-            <span class="db"><img src="{{ asset('/images/logo-icon.png') }}" alt="{{ config('app.name') }}" /></span>
+            <span class="db"><img src="{{ config('larateme.images.logo-icon') }}" alt="{{ config('app.name') }}" /></span>
             <h5 class="font-medium m-b-20">@lang('Sign In to Admin')</h5>
         </div>
         <!-- Form -->
@@ -27,18 +27,18 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
                         </div>
-                        <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        <input name="email" type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
                         </div>
-                        <input type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                        <input name="password" type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                     </div>
                     <div class="form-group row">
                         <div class="col-md-12">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <input name="remember" type="checkbox" class="custom-control-input" id="customCheck1">
                                 <label class="custom-control-label" for="customCheck1">@lang('larateme::dashboard.auth.login.remember')</label>
                                 <a href="javascript:void(0)" id="to-recover" class="text-dark float-right"><i class="fa fa-lock m-r-5"></i> @lang('larateme::dashboard.auth.login.forget')?</a>
                             </div>
@@ -53,8 +53,8 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
                             <div class="social">
                                 {!! $social ?? '' !!}
-                                <a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip" title="" data-original-title="Login with Facebook"> <i aria-hidden="true" class="fab  fa-facebook"></i> </a>
-                                <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip" title="" data-original-title="Login with Google"> <i aria-hidden="true" class="fab  fa-google-plus"></i> </a>
+                                {{--<a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip" title="" data-original-title="Login with Facebook"> <i aria-hidden="true" class="fab  fa-facebook"></i> </a>
+                                <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip" title="" data-original-title="Login with Google"> <i aria-hidden="true" class="fab  fa-google-plus"></i> </a>--}}
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                     </div>
                     @csrf
                 </form>
-                {!! $social ?? '' !!}
+
             </div>
         </div>
     </div>
