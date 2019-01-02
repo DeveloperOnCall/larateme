@@ -1,3 +1,5 @@
+![banner](https://user-images.githubusercontent.com/3272625/50597059-ad9d4200-0ed8-11e9-9016-46429572c707.jpg)
+
 # Laravel Larateme Template
 > A full featured admin panel for your laravel applications.
 
