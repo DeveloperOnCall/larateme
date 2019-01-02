@@ -1,0 +1,9 @@
+@extends('larateme::layout')
+
+@section('content')
+    @component('larateme::page', ['title' => 'Home'])
+        @component('larateme::box')
+            You're logged in!
+        @endcomponent
+    @endcomponent
+@endsection

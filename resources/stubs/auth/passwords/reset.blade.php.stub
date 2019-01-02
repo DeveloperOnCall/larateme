@@ -1,0 +1,1 @@
+@extends('larateme::auth.passwords.reset')

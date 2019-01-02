@@ -1,0 +1,35 @@
+{
+    "name": "developeroncall/larateme",
+    "description": "A Bootstrap 4 Laravel Boilerplate on steroids",
+    "keywords": ["laravel", "angie-framework", "dashboard", "admin", "administrator"],
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "developeroncall",
+            "email": "admin@developeroncall.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": "^7.0",
+      "illuminate/support": "5.*",
+      "laracasts/flash": "^3.0",
+      "davejamesmiller/laravel-breadcrumbs": "^5.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "DeveloperOnCall\\Larateme\\": "src/"
+    },
+    "files": [
+        "src/Support/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DeveloperOnCall\\Larateme\\LaratemeServiceProvider"
+      ]
+    }
+  }
+}
