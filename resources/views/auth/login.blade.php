@@ -46,7 +46,7 @@
                     </div>
                     <div class="form-group text-center">
                         <div class="col-xs-12 p-b-20">
-                            <button class="btn btn-block btn-lg btn-info" type="submit">@lang('larateme::dashboard.auth.login')</button>
+                            <button class="btn btn-block btn-lg btn-info" type="submit">@lang('larateme::dashboard.auth.login.title')</button>
                         </div>
                     </div>
                     <div class="row">
