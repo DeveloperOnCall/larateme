@@ -156,7 +156,7 @@ Example with sending data to breadcrmbs:
 @endcomponent
 ```
 <a name="larateme-components-card"></a>
-### 3. Box Component
+### 3. Card Component
 The card component is a wrapper bootstrap card.
 Example code:
 ```
@@ -180,12 +180,12 @@ A more advanced example:
 ```
 > Note: the supported styles are `default`, `primary`, `info`, `warning`, `success` and `danger`.
 
-<a name="angielte-components-table-box"></a>
+<a name="larateme-components-table-box"></a>
 ### 4. Table Box Component
 The table box component can be used to put a table directly within an angielte box component.
 Example usage:
 ```
-@component('angielte::table-box', ['collection' => $users])
+@component('larateme::table-box', ['collection' => $users])
     <tr>
         <th>Name</th>
         <th>Email</th>
