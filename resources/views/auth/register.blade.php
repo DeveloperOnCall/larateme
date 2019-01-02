@@ -18,17 +18,17 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-12 ">
-                            <input class="form-control form-control-lg" type="text" required=" " placeholder="@lang('larateme::dashboard.auth.register.email')">
+                            <input name="email" class="form-control form-control-lg" type="text" required=" " placeholder="@lang('larateme::dashboard.auth.register.email')">
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-12 ">
-                            <input class="form-control form-control-lg" type="password" required=" " placeholder="@lang('larateme::dashboard.auth.register.password')">
+                            <input name="password" class="form-control form-control-lg" type="password" required=" " placeholder="@lang('larateme::dashboard.auth.register.password')">
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-12 ">
-                            <input class="form-control form-control-lg" type="password" required=" " placeholder="@lang('larateme::dashboard.auth.register.password_confirmation')">
+                            <input name="password_confirmation" class="form-control form-control-lg" type="password" required=" " placeholder="@lang('larateme::dashboard.auth.register.password_confirmation')">
                         </div>
                     </div>
                     <div class="form-group row">

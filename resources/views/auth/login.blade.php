@@ -40,7 +40,7 @@
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                                 <label class="custom-control-label" for="customCheck1">@lang('larateme::dashboard.auth.login.remember')</label>
-                                <a href="javascript:void(0)" id="to-recover" class="text-dark float-right"><i class="fa fa-lock m-r-5"></i> @lang('larateme::dashboard.auth.login.forgot')?</a>
+                                <a href="javascript:void(0)" id="to-recover" class="text-dark float-right"><i class="fa fa-lock m-r-5"></i> @lang('larateme::dashboard.auth.login.forget')?</a>
                             </div>
                         </div>
                     </div>

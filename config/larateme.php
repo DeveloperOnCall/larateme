@@ -18,8 +18,8 @@ return [
          */
         'header' => [
             'right' => [
-                'larateme::partials.header.languages',
                 'larateme::partials.header.block_search',
+                'larateme::partials.header.languages',
                 'larateme::partials.header.block_user_profile',
 
             ],
@@ -43,9 +43,7 @@ return [
          * 'boxed','dark','horizontal','horizontal-fullwidth','iconbar',
          * 'light-sidebar','ltr','mini-sidebar','overlay','rtl',
          */
-        'layout' => [
-            'light-sidebar'
-        ],
+        'layout' => 'light-sidebar',
 
     ],
     'urls' => [
@@ -67,9 +65,12 @@ return [
         'password_reset' => 'password/reset',
     ],
     'images' => [
-        'logo_icon' => '/images/logo-icon.png',
+        'logo-icon' => '/images/logo-icon.png',
+        'logo-light-icon' => '/images/logo-light-icon.png',
         'logo' => '/images/logo.png',
         'logo-dark' => '/images/logo-dark.png',
         'logo-light' => '/images/logo-lite.png',
+        'logo-text' => '/images/logo-text.png',
+        'logo-light-text' => '/images/logo-lite-text.png',
     ],
 ];

@@ -13,17 +13,17 @@
                 <b class="logo-icon">
                     <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                     <!-- Dark Logo icon -->
-                    <img src="{{ asset('/images/logo-icon.png') }}" alt="{{ config('app.name') }}" class="dark-logo" />
+                    <img src="{{ config('larateme.images.logo-icon') }}" alt="{{ config('app.name') }}" class="dark-logo" />
                     <!-- Light Logo icon -->
-                    <img src="{{ asset('/images/logo-light-icon.png') }}" alt="{{ config('app.name') }}" class="light-logo" />
+                    <img src="{{ config('larateme.images.logo-light-icon') }}" alt="{{ config('app.name') }}" class="light-logo" />
                 </b>
                 <!--End Logo icon -->
                 <!-- Logo text -->
                 <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="{{ asset('/images/logo-text.png') }}" alt="{{ config('app.name') }}" class="dark-logo" />
+                            <img src="{{ config('larateme.images.logo-text') }}" alt="{{ config('app.name') }}" class="dark-logo" />
                     <!-- Light Logo text -->
-                            <img src="{{ asset('/images/logo-light-text.png') }}" class="light-logo" alt="{{ config('app.name') }}" />
+                            <img src="{{ config('larateme.images.logo-text-light') }}" class="light-logo" alt="{{ config('app.name') }}" />
                         </span>
             </a>
             <!-- ============================================================== -->

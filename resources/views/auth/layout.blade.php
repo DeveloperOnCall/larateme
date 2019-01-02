@@ -63,10 +63,10 @@
 <!-- ============================================================== -->
 <!-- All Required js -->
 <!-- ============================================================== -->
-<script src="{{ asset('/libs/jquery/dist/jquery.min.js') }}../../assets"></script>
+<script src="{{ asset('/libs/jquery/dist/jquery.min.js') }}"></script>
 <!-- Bootstrap tether Core JavaScript -->
-<script src="{{ asset('/libs/popper.js/dist/umd/popper.min.js') }}../../assets"></script>
-<script src="{{ asset('/libs/bootstrap/dist/js/bootstrap.min.js') }}../../assets"></script>
+<script src="{{ asset('/libs/popper.js/dist/umd/popper.min.js') }}"></script>
+<script src="{{ asset('/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <!-- ============================================================== -->
 <!-- This page plugin js -->
 <!-- ============================================================== -->

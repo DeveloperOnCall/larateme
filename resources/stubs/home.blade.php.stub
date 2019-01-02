@@ -2,7 +2,7 @@
 
 @section('content')
     @component('larateme::page', ['title' => 'Home'])
-        @component('larateme::box')
+        @component('larateme::components.card', ['title' => 'Home','card_text' => 'Logged In'])
             You're logged in!
         @endcomponent
     @endcomponent
