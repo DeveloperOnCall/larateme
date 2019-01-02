@@ -153,7 +153,7 @@ Notes:
 
 Example with sending data to breadcrmbs:
 ```
-@component('angielte::page', ['title' => 'Home', 'breadcrumb' => ['home', $user]])
+@component('larateme::page', ['title' => 'Home', 'breadcrumb' => ['home', $user]])
  The page content...
 @endcomponent
 ```
@@ -184,7 +184,7 @@ A more advanced example:
 
 <a name="larateme-components-table-box"></a>
 ### 4. Table Box Component
-The table box component can be used to put a table directly within an angielte box component.
+The table box component can be used to put a table directly within an larateme box component.
 Example usage:
 ```
 @component('larateme::table-box', ['collection' => $users])
