@@ -1,4 +1,6 @@
-# Laravel AngieLte Template
+![banner](https://user-images.githubusercontent.com/3272625/50597059-ad9d4200-0ed8-11e9-9016-46429572c707.jpg)
+
+# Laravel Larateme Template
 > A full featured admin panel for your laravel applications.
 
 1. [Introduction](#intro)
@@ -151,12 +153,12 @@ Notes:
 
 Example with sending data to breadcrmbs:
 ```
-@component('angielte::page', ['title' => 'Home', 'breadcrumb' => ['home', $user]])
+@component('larateme::page', ['title' => 'Home', 'breadcrumb' => ['home', $user]])
  The page content...
 @endcomponent
 ```
 <a name="larateme-components-card"></a>
-### 3. Box Component
+### 3. Card Component
 The card component is a wrapper bootstrap card.
 Example code:
 ```
@@ -180,12 +182,12 @@ A more advanced example:
 ```
 > Note: the supported styles are `default`, `primary`, `info`, `warning`, `success` and `danger`.
 
-<a name="angielte-components-table-box"></a>
+<a name="larateme-components-table-box"></a>
 ### 4. Table Box Component
-The table box component can be used to put a table directly within an angielte box component.
+The table box component can be used to put a table directly within an larateme box component.
 Example usage:
 ```
-@component('angielte::table-box', ['collection' => $users])
+@component('larateme::table-box', ['collection' => $users])
     <tr>
         <th>Name</th>
         <th>Email</th>
