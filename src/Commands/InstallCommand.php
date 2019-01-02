@@ -47,6 +47,18 @@ class InstallCommand extends Command
             '--force' => '--force',
         ]);
 
+        $this->call('vendor:publish', [
+            '--tag' => 'larateme:config',
+            '--force' => '--force',
+        ]);
+
+        $this->call('vendor:publish', [
+            '--provider' => 'DaveJamesMiller\Breadcrumbs\BreadcrumbsServiceProvider',
+            '--force' => '--force',
+        ]);
+
+        // php artisan vendor:publish --provider="DaveJamesMiller\Breadcrumbs\BreadcrumbsServiceProvider"
+
         $this->info('The larateme template assets have been added successfully.');
     }
 }
