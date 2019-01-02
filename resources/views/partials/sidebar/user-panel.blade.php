@@ -17,7 +17,7 @@
                aria-expanded="false">
                 <i class="ti-settings"></i>
             </a>
-            <a href="{{ route('logout') }}" title="Logout" class="btn btn-circle btn-sm">
+            <a href="{{ route('logout') }}" title="Logout" class="btn btn-circle btn-sm"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="ti-power-off"></i>
             </a>
             <div class="dropdown-menu animated flipInY" aria-labelledby="Userdd">
@@ -31,7 +31,7 @@
                 <a class="dropdown-item" href="javascript:void(0)">
                     <i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="javascript:void(0)">
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
             </div>
         </div>

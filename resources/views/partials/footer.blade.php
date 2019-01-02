@@ -6,3 +6,6 @@
     All Rights Reserved by <a href="{{ url('/') }}">{{ config('app.name') }}</a>.</strong>
     Designed and Developed by <a href="http://developeroncall.com">DeveloperOnCall</a>.
 </footer>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+    {{ csrf_field() }}
+</form>
