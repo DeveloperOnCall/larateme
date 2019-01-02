@@ -1,4 +1,4 @@
-# Laravel AngieLte Template
+# Laravel Larateme Template
 > A full featured admin panel for your laravel applications.
 
 1. [Introduction](#intro)
