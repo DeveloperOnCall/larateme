@@ -30,6 +30,9 @@
     "laravel": {
       "providers": [
         "DeveloperOnCall\\Larateme\\LaratemeServiceProvider"
+      ],
+      "aliases": [
+        "DevOnCall": "DeveloperOnCall\\Larateme\\Sources"
       ]
     }
   }

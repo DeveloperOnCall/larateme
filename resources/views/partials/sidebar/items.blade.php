@@ -7,6 +7,7 @@
  */?>
 
 {{--  For each to build the side bar menu  --}}
+@foreach($adminmenu as $item)
 <li class="sidebar-item">
     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
         <i class="icon-Mailbox-Empty"></i>
@@ -33,3 +34,4 @@
         </li>
     </ul>
 </li>
+    @endforeach

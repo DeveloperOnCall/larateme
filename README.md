@@ -14,12 +14,14 @@
     4. [Table Box Component](#larateme-components-table-box)
     5. [Info Box Component](#larateme-components-info-box)
 6. [[Optional] Overriding the default views](#larateme-views)
+7. [Bootstrap Components](#larateme-marvinlabs)
 
 <a name="intro"></a>
 ## 1. Introduction
 This package depend on other packages under the hood, these packages are:
 * [Laravel Breadcrumbs](https://github.com/davejamesmiller/laravel-breadcrumbs)
 * [Laracasts Flash](https://github.com/laracasts/flash)
+* [Bootstap4 HTML Builder](https://github.com/marvinlabs/laravel-html-bootstrap-4)
 
 <a name="installation"></a>
 ## 2. Installation
@@ -44,10 +46,17 @@ After install two configuration files will be published `config/larateme.php` an
 
 return [
     'appearance' => [
-        'version' => '.001',
+        'version' => '1.004',
         'dashboard' => 1,
         /*
          * Supported values skin1/skin2/skin3/skin4/skin5/skin6
+         * To apply blue color - skin1
+         * To apply orange color - skin2
+         * To apply cyan color - skin3
+         * To apply purple color - skin4
+         * To apply black color - skin5
+         * To apply gray color - skin6
+         *
          */
         'skin' => 'skin1',
 
@@ -106,17 +115,48 @@ return [
         'password_request' => 'password/reset',
         'password_email' => 'password/email',
         'password_reset' => 'password/reset',
+        'search' => '/search',
     ],
+
     'images' => [
-        'logo-icon' => '/images/logo-icon.png',
-        'logo-light-icon' => '/images/logo-light-icon.png',
-        'logo' => '/images/logo.png',
-        'logo-dark' => '/images/logo-dark.png',
-        'logo-light' => '/images/logo-lite.png',
-        'logo-text' => '/images/logo-text.png',
-        'logo-light-text' => '/images/logo-lite-text.png',
+        /*
+        |--------------------------------------------------------------------------
+        | IMAGEs
+        |--------------------------------------------------------------------------
+        |
+        | Change the basic images within the template by setting their urls below
+        |
+        |
+        */
+        'logo-icon' => '/assets/images/logo-icon.png',
+        'logo-light-icon' => '/assets/images/logo-light-icon.png',
+        'logo' => '/assets/images/logo.png',
+        'logo-dark' => '/assets/images/logo-dark.png',
+        'logo-light' => '/assets/images/logo-lite.png',
+        'logo-text' => '/assets/images/logo-text.png',
+        'logo-light-text' => '/assets/images/logo-lite-text.png',
+        'login-background' => '/assets/images/big/auth-bg.jpg',
+
     ],
-];
+
+    'sources' => [
+        /*
+        |--------------------------------------------------------------------------
+        | Data Sources - WORK IN PROGRESS
+        |--------------------------------------------------------------------------
+        |
+        | This is very much a work in progress and should not be used yet
+        |
+        */
+        'message_list'  => [
+            'klass' => 'MessageController',
+            'method' => 'messageList',
+        ],
+        'user_list'  => [
+            'klass' => 'User',
+            'method' => 'userList',
+        ],
+    ]
 ```
 You can take a look at [Laravel Breadcrumbs Documentation](https://github.com/davejamesmiller/laravel-breadcrumbs#custom-templates) for the configuration details about `config/breadscrumbs.php` file.
 
@@ -240,5 +280,31 @@ php artisan vendor:publish --tag=larateme-views
 Now, you can edit the views in `resources/views/vendor/larateme`.
 > **Note**: If you publish the package views it will not automatically use any future updates and bug fixes.
 
-I will be creating components for most Bootstrap 4 elements and will update this package as time permits
+I will be creating components for custom elements and will update this package as time permits
+
+<a name="larateme-marvinlabs"></a>
+## 7. Bootstrap 4 Components - rendered within blade templates
+I have added the [Bootstap4 HTML Builder](https://github.com/marvinlabs/laravel-html-bootstrap-4) to make
+generating standard Bootstrap components simple.
+### This is a standard Jumbotron element
+```php
+@component('bs::jumbotron')
+    @slot('heading')
+        Hello, world!
+    @endslot
+    @slot('subheading')
+        This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+        content or information.
+    @endslot
+
+    <hr class="my-3">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+    @slot('actions')
+        {!! bs()->a('#', 'Learn more')->asButton('primary') !!}
+    @endslot
+@endcomponent
+```
+For details on using this package please visit [documentation](https://github.com/marvinlabs/laravel-html-bootstrap-4/blob/HEAD//docs)
+
 
