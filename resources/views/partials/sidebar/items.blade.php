@@ -7,8 +7,9 @@
  */?>
 
 {{--  For each to build the side bar menu  --}}
-@foreach($adminmenu as $item)
-<li class="sidebar-item">
+@isset($adminmenu)
+    @foreach($adminmenu as $item)
+        <li class="sidebar-item">
     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
         <i class="icon-Mailbox-Empty"></i>
         <span class="hide-menu">Inbox </span>
@@ -35,3 +36,4 @@
     </ul>
 </li>
     @endforeach
+@endisset
