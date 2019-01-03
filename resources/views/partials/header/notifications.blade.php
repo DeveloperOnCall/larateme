@@ -25,7 +25,7 @@
             </li>
             <li>
                 <div class="message-center notifications">
-                    @foreach($notifications)
+                    @foreach($notifications as $notice)
                         <!-- Message -->
                         <a href="javascript:void(0)" class="message-item">
                                                 <span class="btn btn-danger btn-circle">
