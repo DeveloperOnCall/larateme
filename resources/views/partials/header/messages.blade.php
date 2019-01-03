@@ -5,6 +5,7 @@
  * Date: 2019-01-02
  * Time: 16:52
  */?>
+@isset($messages)
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="font-20 ti-email"></i>
@@ -82,3 +83,4 @@
         </ul>
     </div>
 </li>
+@endisset
