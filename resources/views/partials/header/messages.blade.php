@@ -17,7 +17,7 @@
         <ul class="list-style-none">
             <li>
                 <div class="drop-title bg-danger text-white">
-                    <h4 class="m-b-0 m-t-5">5 New</h4>
+                    <h4 class="m-b-0 m-t-5">{{ count($messages) }} New</h4>
                     <span class="font-light">Messages</span>
                 </div>
             </li>

@@ -141,17 +141,6 @@
 <!--Custom JavaScript -->
 <script src="{{ asset('/dist/js/custom.min.js') }}"></script>
 <!--This page JavaScript -->
-<!--chartis chart-->
-<script src="{{ asset('/assets/libs/chartist/dist/chartist.min.js') }}"></script>
-<script src="{{ asset('/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js') }}"></script>
-<!--c3 charts -->
-<script src="{{ asset('/assets/extra-libs/c3/d3.min.js') }}"></script>
-<script src="{{ asset('/assets/extra-libs/c3/c3.min.js') }}"></script>
-<!--chartjs -->
-<script src="{{ asset('/assets/libs/raphael/raphael.min.js') }}"></script>
-<script src="{{ asset('/assets/libs/morris.js/morris.min.js') }}"></script>
-{{-- TODO::Set Dashboard from config --}}
-<script src="{{ asset('/dist/js/pages/dashboards/dashboard1.js') }}"></script>
 @stack('scripts')
 </body>
 

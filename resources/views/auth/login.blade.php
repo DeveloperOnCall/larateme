@@ -22,7 +22,7 @@
                             <strong>{{ $errors->first('password') }}</strong>
                         </span>
                 @endif
-                <form class="form-horizontal m-t-20" id="loginform" action="{{ config('larateme.urls.login') }}">
+                <form class="form-horizontal m-t-20" id="loginform" action="{{ route('login') }}" method="post">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
@@ -33,7 +33,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
                         </div>
-                        <input name="password" type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                        <input name="password" type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                     </div>
                     <div class="form-group row">
                         <div class="col-md-12">
